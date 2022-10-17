@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UTAG GUSS PORTAL</title>
+    <meta name="description" content="This is a site where members of UTAG in KNUST can apply for a GUSSS hostel  bedspace. Just create an account and login to access your dashboard. Then apply for a room to stand a chance of being randomly selected. ">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstraphome.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="{{url_for('static',filename='fonts/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><img src="{{url_for('static',filename='img/knustlogo.png')}}" loading="lazy"><a class="navbar-brand" href="/">UTAG GUSSS PORTAL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="ml-auto" href="/about" style="color: rgb(0,0,0);"><span style="text-decoration: underline;">About</span></a></div>
+        </div>
+    </nav>
+    <header class="masthead text-white text-center" style="background:url('{{url_for('static',filename='img/andrew-neel-cckf4TsHAuw-unsplash.jpg')}}')no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5"><br>Welcome to the KNUST Accommodation Application System For UTAG MEMBERS<br><br></h1>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"><a class="btn btn-primary btn-lg border rounded border-white" role="button" data-bs-hover-animate="bounce" style="background-color: rgb(0,0,0);" href="/login">Login</a></div>
+                        <div class="col"><a class="btn btn-primary btn-lg border-white" role="button" data-bs-hover-animate="bounce" style="background-color: rgb(0,0,0);" href="/register">sign up</a></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><img class="icon-layers m-auto text-primary" src="{{url_for('static',filename='img/icons8-1st-100.png')}}"></div>
+                        <h3>Login</h3>
+                        <p class="lead mb-0">Login to access your dashboard</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><img class="icon-layers m-auto text-primary" src="{{url_for('static',filename='img/icons8-circled-2-100.png')}}"></div>
+                        <h3>Apply for Bed Space</h3>
+                        <p class="lead mb-0">Apply to be eligible for a bedspace</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><img class="icon-layers m-auto text-primary" src="{{url_for('static',filename='img/icons8-circled-3-100.png')}}"></div>
+                        <h3>Accept Bed space</h3>
+                        <p class="lead mb-0">Choose to accept bed space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;{{url_for('static',filename='img/KNUSTVIRTUAL1.jpg')}}&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Brunei complex</h2>
+                    <p class="lead mb-0"><br><br>Brunei complex is a hostel accommodation in Ghana. Brunei Complex is situated at the west of Kotei.<br><br></p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;{{url_for('static',filename='img/KNUSTVIRTUAL2.jpg')}}&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Baby Brunei&nbsp;</h2>
+                    <p class="lead mb-0">Situated next to Brunei complex, baby Brunei is a three-storey building with nice facilities.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;{{url_for('static',filename='img/KNUSTVIRTUAL3.jpg')}}&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Hall 7</h2>
+                    <p class="lead mb-0">Also known as the vice chancellor's hall, hall seven is a nice building with amazing compond.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;{{url_for('static',filename='img/hall7.jpg')}}&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>New Brunei</h2>
+                    <p class="lead mb-0">Its also a partof the GUSSS hostels. It is nice and has spacious rooms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-light" style="background-image: url(&quot;{{url_for('static',filename='img/paul-volkmer-fX-qWsXl5x8-unsplash.jpg')}}&quot;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© UTAG GUSSS PORTAL 2021. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrapjava.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bs-init.js')}}"></script>
+</body>
+
+</html>

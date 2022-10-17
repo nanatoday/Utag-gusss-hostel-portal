@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Verify Email</title>
+    <meta name="description" content="Verify your email">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{{url_for('static',filename='fonts/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-10">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <p class="text-center">A verification code has been sent to your email</p>
+                                        <h4 class="text-dark mb-4">Enter Code</h4>
+                                    </div>
+                                    <form class="user" method="post" action="/verify">
+                                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Code Here..." name="verficationcode" required="" minlength="5" maxlength="5" pattern="^[0-9]*$"></div>
+                                        <div
+                                            class="form-group">
+                                            <div class="custom-control custom-checkbox small"></div>
+                                </div><button class="btn btn-primary btn-block text-white btn-user" type="submit" style="background-color: rgb(25,28,35);">Submit</button>
+                                <p class="text-center">If you didn't recieve a code click resend code</p>
+                                <hr>
+                                <hr>
+                                </form>
+                                <div class="text-center"><a class="small" href="#">resend code</a></div>
+                                <div class="text-center"><a class="small" href="/register"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bs-init.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="{{url_for('static',filename='js/theme.js')}}"></script>
+</body>
+
+</html>
